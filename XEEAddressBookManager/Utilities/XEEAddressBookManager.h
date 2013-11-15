@@ -30,6 +30,9 @@ typedef void (^XEEBlockContacts)(NSArray *contacts);
 @interface XEEAddressBookManager : NSObject
 
 
+/**
+ @param contacts Block delivering array of XEEAddressBookContact instances.
+ */
 -(void) allContactsFromAddressbook:(XEEBlockContacts)contacts;
 
 @end
